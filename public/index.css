@@ -1,0 +1,108 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    /* overflow: hidden; */
+    /* position: center; Make it stick/fixed */
+    background-color: #f7f7f7;
+    text-align: center;
+    /* transition: top 0.3s; Transition effect when sliding down (and up) */
+    position: relative;
+    letter-spacing: 5px;
+}
+
+.navitem {
+    float: none;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.scrollicon {
+    width: 45px;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg-1 {
+    background-image: url("img/iss063e074380.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("img/euro_otter_by_Catherine_Trigg.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("img/GettyImages-509291231-be20ccc.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    opacity: 0.95;
+    margin-bottom: 50px;
+}
+
+.caption,
+.border {
+    background-color: transparent;
+    color: #f7f7f7;
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+.profile {
+    border-radius: 50%;
+}
+.textblock {
+    color: #ddd;
+    background-image: none;
+    background-color: #282e34;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
