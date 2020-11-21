@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>SC2 Unit Generator</title>
+        <meta name="title" content="SC2 Unit Generator" />
+        <meta
+            property="image"
+            content="http://www.sc2unitgenerator.jacobherrmann.tech/icon/apple-touch-icon-144x144.png"
+        />
+        <meta
+            name="description"
+            content="SC2 Random Unit generartor built by Jacob Herrmann. Time for some epic monobattles."
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="http://www.sc2unitgenerator.jacobherrmann.tech/"
+        />
+        <meta property="og:title" content="SC2 Unit Generator" />
+        <meta
+            property="og:description"
+            content="SC2 Random Unit generartor built by Jacob Herrmann. Time for some epic monobattles."
+        />
+        <meta
+            property="og:image"
+            content="http://www.sc2unitgenerator.jacobherrmann.tech/icon/apple-touch-icon-144x144.png"
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="http://www.sc2unitgenerator.jacobherrmann.tech/"
+        />
+        <meta property="twitter:title" content="SC2 Unit Generator" />
+        <meta
+            property="twitter:description"
+            content="SC2 Random Unit generartor built by Jacob Herrmann. Time for some epic monobattles."
+        />
+        <meta
+            property="twitter:image"
+            content="http://www.sc2unitgenerator.jacobherrmann.tech/icon/apple-touch-icon-144x144.png"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Unit Generator</title>
+        <meta
+            name="description"
+            content="SC2 Random Unit generartor built by Jacob Herrmann. Time for some epic monobattles."
+        />
+        <meta
+            name="keywords"
+            content="SC2, monobattles, random unit generartor"
+        />
+        <meta name="author" content="Jacob Herrmann" />
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="57x57"
+            href="/icon/apple-touch-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="114x114"
+            href="/icon/apple-touch-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="72x72"
+            href="/icon/apple-touch-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="144x144"
+            href="/icon/apple-touch-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="60x60"
+            href="/icon/apple-touch-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="120x120"
+            href="/icon/apple-touch-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="76x76"
+            href="/icon/apple-touch-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="152x152"
+            href="/icon/apple-touch-icon-152x152.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icon/favicon-196x196.png"
+            sizes="196x196"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icon/favicon-32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icon/favicon-16x16.png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/icon/favicon-128.png"
+            sizes="128x128"
+        />
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta
+            name="msapplication-TileImage"
+            content="/icon/mstile-144x144.png"
+        />
+        <meta
+            name="msapplication-square70x70logo"
+            content="/icon/mstile-70x70.png"
+        />
+        <meta
+            name="msapplication-square150x150logo"
+            content="/icon/mstile-150x150.png"
+        />
+        <meta
+            name="msapplication-wide310x150logo"
+            content="/icon/mstile-310x150.png"
+        />
+        <meta
+            name="msapplication-square310x310logo"
+            content="/icon/mstile-310x310.png"
+        />
+    </head>
+    <body onload="onStart()">
+        <div class="title">
+            <h1>SC2 Unit Generator</h1>
+            <button onclick="genrateUnitsPara()" class="btnoll">Roll</button>
+        </div>
+        <section class="columns">
+            <div class="column-left-empty">
+                <h2></h2>
+                <p id="empty"></p>
+            </div>
+            <div class="column-left">
+                <h2>Terran</h2>
+                <p id="terran"></p>
+            </div>
+            <div class="column-left-empty">
+                <h2></h2>
+                <p id="empty"></p>
+            </div>
+            <div class="column-center">
+                <h2>Zerg</h2>
+                <p id="zerg"></p>
+            </div>
+            <div class="column-left-empty">
+                <h2></h2>
+                <p id="empty"></p>
+            </div>
+            <div class="column-right">
+                <h2>Protoss</h2>
+                <p id="protoss"></p>
+            </div>
+            <div class="column-right-empty">
+                <h2></h2>
+                <p id="empty"></p>
+            </div>
+        </section>
+
+        <div>
+            <button class="togglebutton" onclick="collapseDiv()">
+                Pool Filters
+            </button>
+            <div hidden="" id="rulebox">
+                <!-- Rectangular switch -->
+                <div>
+                    <p class="tooltip">
+                        Can Damage Buildings
+                        <span class="tooltiptext"
+                            >removes units that can't win the game, like
+                            Phoenixes or Widow Mines</span
+                        >
+                    </p>
+                </div>
+                <label class="switch">
+                    <input
+                        id="AB"
+                        type="checkbox"
+                        onclick="AttackGroundToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+                <div>
+                    <p class="tooltip">
+                        Include Medivacs/Vipers
+                        <span class="tooltiptext"
+                            >lame units for monobattles, but knock yourself
+                            out</span
+                        >
+                    </p>
+                </div>
+
+                <label class="switch">
+                    <input id="MV" type="checkbox" onclick="supportToggle()" />
+                    <span class="slider round"></span>
+                </label>
+                <div>
+                    <p class="tooltip">
+                        Include Ground Units
+                        <span class="tooltiptext"
+                            >units that touch the earth</span
+                        >
+                    </p>
+                </div>
+                <label class="switch">
+                    <input
+                        id="GU"
+                        type="checkbox"
+                        onclick="groundUnitsToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <div>
+                    <p class="tooltip">
+                        Include Air Units
+                        <span class="tooltiptext">units that defy gravity</span>
+                    </p>
+                </div>
+                <label class="switch">
+                    <input id="AU" type="checkbox" onclick="airUnitsToggle()" />
+                    <span class="slider round"></span>
+                </label>
+                <div>
+                    <p class="tooltip">
+                        Include Teir 1 Units
+                        <span class="tooltiptext">units you rush with</span>
+                    </p>
+                </div>
+
+                <label class="switch">
+                    <input
+                        id="teir1"
+                        type="checkbox"
+                        onclick="teir1toggle(1)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <div>
+                    <p class="tooltip">
+                        Include Teir 2 Units
+                        <span class="tooltiptext">mid game units</span>
+                    </p>
+                </div>
+                <label class="switch">
+                    <input
+                        id="teir2"
+                        type="checkbox"
+                        onclick="teir1toggle(2)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+                <div>
+                    <p class="tooltip">
+                        Include Teir 3 Units
+                        <span class="tooltiptext"
+                            >units she told you not to worry about</span
+                        >
+                    </p>
+                </div>
+                <label class="switch">
+                    <input
+                        id="teir3"
+                        type="checkbox"
+                        onclick="teir1toggle(3)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+                <div>
+                    <p class="tooltip">
+                        Not Enough Profanity
+                        <span class="tooltiptext">are you swearing yet?</span>
+                    </p>
+                </div>
+                <label class="switch">
+                    <input
+                        id="pro"
+                        type="checkbox"
+                        onclick="profanityToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <p class="credit">
+            By
+            <a href="https://www.linkedin.com/in/jacob-herrmann-545b44167/"
+                >Jacob Herrmann</a
+            >
+        </p>
+        <p class="credit">
+            <a href="https://github.com/KourFrost/UnitGenerator">github</a>
+        </p>
+    </body>
+</html>
